@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabySingers", "BabySingers\BabySingers.csproj", "{4F73A984-5CC4-47A4-8C92-50DFDC9910D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AEC7D91A-B42E-4C6F-BE00-6B83270607B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F73A984-5CC4-47A4-8C92-50DFDC9910D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F73A984-5CC4-47A4-8C92-50DFDC9910D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F73A984-5CC4-47A4-8C92-50DFDC9910D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F73A984-5CC4-47A4-8C92-50DFDC9910D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC7D91A-B42E-4C6F-BE00-6B83270607B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC7D91A-B42E-4C6F-BE00-6B83270607B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC7D91A-B42E-4C6F-BE00-6B83270607B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC7D91A-B42E-4C6F-BE00-6B83270607B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E805794-10AC-4326-80F0-58084045A47A}
+	EndGlobalSection
+EndGlobal
