@@ -11,7 +11,10 @@ namespace BabySingers.Models
         public IEnumerable<Question> questions { get; set; }
 
         public List<string> answers { get; set; }
+<<<<<<< HEAD
 
         public List<string> questionpic { get; set; }
+=======
+>>>>>>> b830e11543be9bdeeeafccb12826682fae25cde1
     }
 }

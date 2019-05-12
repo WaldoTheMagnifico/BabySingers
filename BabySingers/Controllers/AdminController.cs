@@ -27,6 +27,7 @@ namespace BabySingers.Controllers
             return View(await applicationDBContext.ToListAsync());
         }
 
+<<<<<<< HEAD
         // GET: Admin/Create
         public IActionResult Create()
         {
@@ -52,6 +53,21 @@ namespace BabySingers.Controllers
                 answers = Answerthings,
                 questionpic = Notepic
             };
+=======
+        [HttpGet]
+        public IActionResult ShowEm()
+        {
+            var Answerthings = _context.Questions.Select(x => x.Answer).Distinct().ToList();
+
+            var Questionthings = _context.Questions.ToList();
+
+            NoteViewmodel noteViewmodel = new NoteViewmodel
+            {
+                questions = Questionthings,
+                answers = Answerthings
+            };
+
+>>>>>>> b830e11543be9bdeeeafccb12826682fae25cde1
             return View(noteViewmodel);
         }
 
@@ -80,6 +96,16 @@ namespace BabySingers.Controllers
             return View(question);
         }
 
+<<<<<<< HEAD
+=======
+        // GET: Admin/Create
+        public IActionResult Create()
+        {
+            ViewData["QtypeID"] = new SelectList(_context.Qtypes, "QtypeID", "Description");
+            return View();
+        }
+
+>>>>>>> b830e11543be9bdeeeafccb12826682fae25cde1
         // POST: Admin/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
