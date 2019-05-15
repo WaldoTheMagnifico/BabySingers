@@ -22,7 +22,7 @@
    <li>Grading for test pages will diplay the number of correct answers beside the total number of questions asked in the session</li>
    <li>Grading will compare the answer submitted to the Answer attribute of the Question and to accurately check score</li> 
    <li>Study page for piano key names will have flip card with a picture of key on the front and notation for the note on the back</li>
-   <li>Study page for Guitar/Bass instruments will have  flip card with a picture of the fret and string on the front and notation for the note on the back</li>
+   <li>Study page for Guitar/Bass instruments will have flip card with picture of fret and string on front and notation on the back</li>
    <li>Page will be user friendly and have clear instructons and navigation</li>
  </ol>
      <h5>Test Plan</h5>
