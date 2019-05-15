@@ -9,15 +9,15 @@
  <ol>
    <li>Navigation buttons lead to correct Views</li>
    <li>General page layout wil have a navigation bar at the top of the page with buttonsto navigate to key pages including Home, 
-   <li>Study page for Interval Regognition will have notation flip cards and audio examples for each interval, ascending and desending<li>
+ <li>Study page for Interval Regognition will have notation flip cards and audio examples for each interval, ascending and desending<li>
    <li>Two test pages for Interval Recognition, one for audio recognition and one for notation</li>
-   <li>Study page for Note Names will have flip cards, the notation on the front and the note name on the back in both treble and bass clef</li>
+  <li>Study page for Note Names will have flip cards, the notation on the front and the note name on the back, treble and bass clef</li>
    <li>Test pages for Note Names, picture of random note with all note options availible as choices</li>
    <li>Study pages for Scales will have notation flip cards and audio examples for each interval, ascending and desending<li>
    <li>Two test pages for Scales, one for audio recognition and one for notation</li>
    <li>Gradingfor test pages will diplay the number of correct answers beside the total number of questions asked in the session</li>
    <li>Referance pages for piano key names, guitar and bass fretboard and various other instrument finger charts</li>
-   <li>Study page for piano key names will have flip cards with a picture of a key on the front and notation for the note on the back for each note in both treble and bass clef</li>
+   <li>Study page for piano key names will have flip card with a picture of key on the front and notation for the note on the back</li>
    <li>Clear and easy to understand navigation</li>
  </ol>
      <h5>Test Plan</h5>
