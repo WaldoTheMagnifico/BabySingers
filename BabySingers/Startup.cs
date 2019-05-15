@@ -24,19 +24,14 @@ namespace BabySingers
 
         public IConfiguration Configuration { get; }
 
-        private string _connection;
+        //private string _connection;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var builder = new SqlConnectionStringBuilder(Configuration.GetConnectionString("DefaultConnection"));
-            builder.Password = Configuration["DatabasePW"];
-            _connection = builder.ConnectionString;
-
-
+            
             services.AddDbContext<ApplicationDBContext>(options =>
-            options.UseSqlServer(_connection));
-
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -44,7 +39,6 @@ namespace BabySingers
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

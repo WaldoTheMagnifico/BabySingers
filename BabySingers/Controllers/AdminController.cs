@@ -35,28 +35,27 @@ namespace BabySingers.Controllers
         }
 
         [HttpGet]
-        public IActionResult ShowEm()
+        public IActionResult NoteQuiz()
         {
-            //gets answers from questions and adds them to a new list
-            var Answerthings = _context.Questions.Select(x => x.Answer).Distinct().ToList();
+            NoteViewmodel noteViewmodel = new NoteViewmodel();
 
-            //gets Questions and adds them to a new list
-            var Questionthings = _context.Questions.ToList();
+            noteViewmodel.questions = _context.Questions.ToList();
 
-            var Notepic = _context.Questions.Select(x => x.Body).ToList();
+            List<string> Answers = new List<string>();
 
-            //popultes propreties of noteViewmodel with the lists that were just made
-            NoteViewmodel noteViewmodel = new NoteViewmodel
+            Dictionary<int, string> guesses = new Dictionary<int, string>();
+            foreach (var item in noteViewmodel.questions)
             {
-                questions = Questionthings,
-                answers = Answerthings,
-                questionpic = Notepic
-            };
-            return View(noteViewmodel);
+                guesses.Add(item.QuestionID, null);
+                Answers.Add(item.Answer);
+            }
+            noteViewmodel.Guesses = guesses;
+            noteViewmodel.answers = Answers;
+
+            return View (noteViewmodel);
         }
 
-        [HttpPost]
-        public IActionResult ShowEm(NoteViewmodel noteViewModel)
+        public IActionResult StudyNotes()
         {
             return View();
         }

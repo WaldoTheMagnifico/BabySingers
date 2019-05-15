@@ -30,7 +30,7 @@ namespace BabySingers.Controllers
             return View();
         }
 
-        public IActionResult StudyNotes()
+        public IActionResult ScalesStudy()
         {
             return View();
         }

@@ -7,15 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\Images\Ear Training.jpg" />
-    <None Include="wwwroot\css\Images\NoteNames.png" />
-    <None Include="wwwroot\css\Images\Singinkids.png" />
+    <None Include="wwwroot\Images\Ear Training.jpg" />
+    <None Include="wwwroot\Images\NoteNames.png" />
+    <None Include="wwwroot\Images\Singinkids.png" />
   </ItemGroup>
 
 
   <ItemGroup>
     <PackageReference Include="BootstrapMvc.Bootstrap4" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.AzureKeyVault.HostingStartup" Version="2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
@@ -25,6 +26,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
   </ItemGroup>
 
 </Project>

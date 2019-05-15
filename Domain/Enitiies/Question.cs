@@ -16,6 +16,7 @@ namespace Domain.Enitiies
         [Required]
         public string Answer { get; set; }
         public int QtypeID { get; set; }
+        public string FlipPics { get; set; }
         public Qtype qtype { get; set; }
         public Song song { get; set; }
     }

@@ -10,8 +10,10 @@ namespace BabySingers.Models
     {
         public IEnumerable<Question> questions { get; set; }
 
+        public List<string> Qtype { get; set; }
+
         public List<string> answers { get; set; }
 
-        public List<string> questionpic { get; set; }
+        public Dictionary<int, string> Guesses { get; set; }
     }
 }

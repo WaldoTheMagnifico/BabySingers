@@ -1,0 +1,25 @@
+﻿@model NoteViewmodel
+@{
+    ViewData["Title"] = "NoteQuiz";
+}
+
+<h1>NoteQuiz</h1>
+<body>
+    <form>
+        @foreach (var item in Model.questions)
+        {
+        <div class="form-group">
+
+            <img src="@item.Body" alt="@item.Body" style="width:128px;height:128px;" >
+            <!--<img class="img-fluid" src="aitem.Body" />-->
+
+            <div class="btn-group">
+                @foreach (var a in Model.answers)
+                {
+                    <input type="button" asp-for="@Model.Guesses[item.QuestionID]" value="@a" />
+                }
+            </div>
+        </div>
+        }
+    </form>
+</body>
