@@ -16,7 +16,7 @@
    <li>Test page for Notation Interval Recognition will show two notes and have each interval as possible answers</li>
   <li>Study page for Note Names will have flip cards for each note, the notation on the front and the note name on the back</li>
    <li>Test pages for Note Names, picture of random note with all note options availible as possible answers</li>
-   <li>Study pages for Scales will have notation flip cards and audio examples for each interval, ascending and desending<li>
+   <li>Study pages for Scales will have notation flip cards and audio examples for each interval, ascending and desending</li>
    <li>Test page for Scales Notation will show a random scale and have each Mode as possible answers</li>
    <li>Test page for Scales Audio will play a random scale and have each Mode as possible answers</li>
    <li>Grading for test pages will diplay the number of correct answers beside the total number of questions asked in the session</li>
